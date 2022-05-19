@@ -1,0 +1,690 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#home:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px;  /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+#about:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px;  /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+#comand:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px;  /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+#galery:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px;  /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+#price:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px; /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+#contact:before 
+{
+    display: block;
+    content: " ";
+    margin-top: -123px;  /*Верхний отступ від назви*/
+    height: 123px;       /*Отступ скролінга*/
+    visibility: hidden;
+}
+
+
+
+
+
+/* Шрифт для сторінки*/
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a
+{
+    text-decoration: none; /* Скасовує всі ефекти, у тому числі підкреслення у посилань, яке задано за замовчуванням.*/
+}
+
+li
+{
+    list-style: none; /*що дозволяє одночасно задати стиль маркера, його положення.*/
+}
+
+header
+{
+    width: 100%;
+    background: #1d1d1dd9;
+    display: flex; /*расположение картинки*/
+    /*position:fixed*/
+    position: fixed;
+    z-index: 10000;
+    
+}
+
+.logo
+{
+    text-transform: uppercase; /*Усі символи тексту стають великими (верхній регістр).*/
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 3%;
+}
+
+nav
+{
+    margin-top: 50px;
+    margin-left: 22%;
+}
+
+.nave a
+{
+    color: white;
+    text-align: center;
+    padding: 10px 18px;
+    font-size: 18px;
+    float:left;
+    
+}
+
+.nave a:hover /*спрацьовує, коли користувач наводить на тег a мишею */
+{
+    border-bottom: 2px solid #DEB887;
+    
+}
+
+
+.sulkuMenu
+{
+    padding: 9px 25px 0px 15px;
+    font-size: 18px;
+    white-space: nowrap;
+    margin: 2px;
+}
+
+
+.contacs
+{
+  padding: 8px 14px;
+  color: white;
+}
+
+.zapus
+{
+    border: 1px solid white;
+    padding: 8px 14px;
+    color: white;
+    margin:12px;
+}
+
+ .icons
+{
+    display: none;
+}
+
+main 
+{
+    display: flex;
+    flex-direction:column ;
+    
+}
+
+main .main_nadp
+{
+    background-image: url(../img/center.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 220px  0 345px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    
+}
+
+main .main_nadp .knopka_main
+{
+    color:white;
+    font-size: 20px;
+    padding: 12px 45px;
+    background: rgb(141, 132, 132);
+    text-shadow: 1px 1px 2px black;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+main .main_nadp .knopka_main:hover
+{
+    background: #a5937f;
+    
+}
+
+main .baner
+{
+    margin-bottom: 60px;
+}
+
+
+#fonz1
+{
+    background: url(../img/fon1.jpg) no-repeat center center fixed, rgba(255,255,255,0.9);
+    background-blend-mode: color;
+    background-size: cover;
+}
+
+main .text_kart
+{
+    padding: 50px 0 50px 0;
+    display: flex; /*веде себе як блоковий елемент.*/
+    margin: 0 auto;
+    width: 80%;
+}
+
+.rights
+{
+    margin-left: 70px;
+}
+
+
+.regs
+{
+    width: 10px;
+    height: 10px;
+}
+
+.rights h1
+{
+    border-bottom: 3px solid #DEB887;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /*Блокові (block) елементи мають висоту, ширину, padding, margin, border, і навіть розташовуються вертикально, друг під одним.
+    Рядкові (inline) елементи розміщуються горизонтально, один за одним.
+    ! Елементи inline-block мають характеристики як блокових, так і малих елементів.
+*/
+}
+
+.rights p 
+{
+    margin: 20px 0 10px 0;
+    /*font-family: 'Montserrat', sans-serif*/
+    font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+    font-size: 20px;
+
+}
+
+.size_photo
+{
+    width: 600px;
+    height: 420px;
+    box-shadow: 10px 10px 10px rgba(0.5,0.5,0.5,0.5);
+}
+
+.teams
+{
+    color: white;
+    text-align: center;
+    padding: 60px 0 0 0;
+    background-color: black;
+    font-size: 18px;
+
+    /*
+    background: url(../img/Fon_imag.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    */
+    
+}
+
+.teams h1
+{
+    border-bottom: 3px solid #DEB887;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+#fonz2
+{
+    background-image: url(../img/bl_5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.photo img
+{
+    width: 320px;
+    height: 340px;
+    border-radius: 10px;
+
+    
+}
+
+.kartuns
+{
+    margin: 0 auto;
+    /*box-shadow: 0 0 30px rgba(255, 255, 255, 1);*/
+    /*border: 3px solid #53da3f;*/
+}
+
+.kartuns:hover 
+{
+    transform: scale(1.1); /*при наведені картинка зібльшується*/
+    transition: transform 0.50s; /* швидкість збільшення картинки*/
+}
+
+.nadp_kart .kartuns1:hover 
+{
+    transform: scale(1.1); /*при наведені картинка зібльшується*/
+    transition: transform 0.50s; /* швидкість збільшення картинки*/
+}
+
+.team_kartuns
+{
+    display: flex;
+}
+
+.kartuns h4
+{
+    padding: 10px 0;
+    color: #c39f76;
+ 
+}
+
+.kartuns p
+{
+    padding-bottom: 50px;
+
+}
+
+
+#fonz3
+{
+    background: url(../img/fon3.jpg) no-repeat center center fixed, rgba(255,255,255,0.9);
+    background-blend-mode: color;
+    background-size: cover;
+}
+
+.prices
+{
+   text-align: center;
+   padding: 60px 0 60px 0;
+   color: white;
+   background-color: black;
+}
+
+.prices h1
+{
+    border-bottom: 3px solid #DEB887;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.eleAnim
+{
+    opacity: 0; /*Скриває елемент в початковому стані*/
+    transform: translateY(20px); /*Звідки буде появлятись елемент*/
+}
+
+
+.eleAnim.elemShow
+{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+
+.abouts
+{
+    display: flex;
+    padding: 0 0 50px 0;
+}
+
+.lefters_ab
+{
+    border: 2px solid black;
+}
+
+.righets_ab
+{
+    margin-right: auto; /*отступ правой колонки*/
+    border: 2px solid black;
+}
+
+
+
+.servicec_ab 
+{
+    background: #262626;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    color: white;
+    margin: 40px;
+}
+
+.service1
+{
+    margin: 40px;
+    display: flex;
+}
+
+
+
+/*другий прайс лист*/
+.table_1
+{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border:0px; 
+    border-collapse:collapse; 
+    background-color: #2c2c2c;
+    padding-bottom: 50px;
+}
+
+.tab_h
+{
+    background: #96885fde;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "apexmk3-medium", sans-serif;
+    width: 100%;
+    height: 58px;
+    color: white;
+}
+
+.table_1 td
+{
+    padding: 0.8rem 1rem;
+    color: white;
+}
+
+.color_tabe
+{
+    background-color: #8080804f;
+}
+
+
+#fonz4
+{
+    background-image: url(../img/fon_bl3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.works_man
+{
+    color:black;
+    text-align: center;
+    padding: 60px 0 60px 0;
+}
+
+.works_man h1
+{
+    border-bottom: 3px solid #DEB887;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    
+}
+
+.works_man img:hover
+{
+    opacity: 0.9;
+}
+
+.phto_gel img
+{
+    width: 250px;
+    height: 195px;
+}
+
+.main_konts
+{
+    /*background-image: ; - тут фонова картинка */
+    text-align: center;
+    color: white;
+}
+
+.main_konts h4
+{
+    font-size: 2.180rem;
+
+}
+
+.blok
+{
+    background-color:  #2c2c2c;
+    padding: 5em 6em;
+    border-radius: 5px;
+    margin: 110px auto;
+}
+
+.blok_konts
+{
+    display: flex;
+}
+
+.main_konts h4
+{
+    border-bottom: 3px solid #DEB887;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.main_konts p
+{
+    font-size: 18px;
+    margin: 5px;
+}
+
+#fonz5
+{
+    background: url(../img/fon3.jpg) no-repeat center center fixed, rgba(255,255,255,0.9);
+    background-blend-mode: color;
+    background-size: cover;
+}
+
+/*Карта*/
+
+#maps
+{
+    width: 100%;
+    height: 600px;
+}
+
+/*footer*/
+
+footer
+{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 30px 0 30px 0;
+}
+.Socl
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Socl img
+{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.Socl img:hover
+{
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 1300px) 
+{
+    .myNave a
+    {
+        display: none;
+    }
+
+    .sulkuMenu a
+    {
+        display: none;
+    }
+
+    .sulkuMenu a.icons
+    {
+       float: right;
+       margin-top: -35px;
+       display: block;
+       color: white;
+       font-size: 30px;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+
+    .myNave.funct
+    {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    header .myNave.funct
+    {
+        height: 470px;
+    }
+
+    .myNave.funct a.icons
+    {
+        position: absolute;
+        top: -39px;
+        right: -173px;
+    }
+    
+     .myNave.funct a
+     {
+         float: none;
+         display: block;
+         text-align: center;
+         font-size: 30px;
+     }
+
+     main .main_nadp p 
+     {
+         font-size: 14px;
+     }
+
+     main .main_nad
+     {
+         padding: 50px 0 50px 0;
+     }
+
+     .size_photo
+     {
+         max-width: 100%;
+     }
+
+     .text_kart
+     {
+         flex-direction: column; /*Картинка и текс в одну колонку при медіа запросі*/
+     }
+
+     .rights
+     {
+         text-align: center;
+         margin-left: 0;
+     }
+
+     .team_kartuns
+    {
+    flex-direction: column;
+    }
+
+    .imges1 img:not(:first-child) /*Все кроме первого елемента*/
+    {
+        display: none;
+    }
+
+    .imges2 img:not(:first-child) /*Все кроме первого елемента*/
+    {
+        display: none;
+    }
+
+    .imges3 img:not(:first-child) /*Все кроме первого елемента*/
+    {
+        display: none;
+    }
+
+    .blok_konts
+    {
+     flex-direction: column;   
+    }
+
+}
+
+@media screen and (max-width: 1200px)
+{
+    nav
+    {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1105px)
+{
+    nav
+    {
+        margin-left: 10%;
+    }
+}
+

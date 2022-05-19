@@ -1,0 +1,112 @@
+body, html 
+{
+    background: #f8f8f8;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+
+.top div 
+{
+    background-color:  white;
+    padding: 2em 0;
+}
+
+.top .baner_zapus
+{
+    position: relative; /* Относительное позиционирование */
+    width: 480px; /* Ширина слоя */
+    height: 20px; /* Высота слоя */
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Comic Sans MS, Comic Sans", cursive
+}
+
+.top .reg
+{
+    position: relative; /* Относительное позиционирование */
+    width: 100px; /* Ширина слоя */
+    height: 20px; /* Высота слоя */
+    text-align: center;
+}
+
+#text_p
+{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.top .reg img
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*Розробка спливаючого меню*/
+ul 
+{   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+
+}
+
+/*Вид головного меню*/
+
+.menu a
+{
+    display: block;
+    border-bottom: 1px solid gray;
+    transition: 0.5s all; /*Плавная подсветка при наведение*/
+    padding: 5px;
+    color: black;
+}
+
+.menu a:hover
+{
+    background: gray;
+}
+
+/*Вид спливаючого меню*/
+
+.menu_listed
+{
+    position: relative;
+    font-size: 20px;
+
+}
+
+
+.menu_droped
+{
+    position: absolute;
+    width: 100%;
+    top:100%;   /*Спливающий блок появляеться снизу*/
+    left: -9999em;
+    opacity: 0; /*Скрить елементи*/
+    transition: 0.5s opacity;
+}
+
+.menu_listed:hover .menu_droped
+{
+    opacity: 1;
+    left: 0;
+}
